@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>h04t01</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans%7CMuli%7CLato">
+		<style>
+		li {
+			display: inline;
+		}
+		nav {
+			height: 30px;
+			text-align: center;
+			background-color: blue;
+		}
+		main {
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			width: 800px;
+			height: 550px;
+			border: 2px dotted blue;
+		}
+		section {
+			margin: 10px;
+			width: 550px;
+			height: 300px;
+		}
+		article {
+			position: relative;
+			width: 550px;
+			height:150px;
+		}
+		aside {
+			position: absolute;
+			width: 200px;
+			height: 510px;
+			top: 20px;
+			right: 20px;
+			background-color: gray;
+		}
+		footer {
+			margin-top: 10px;
+			margin-left: 20%;
+		}
+		a {
+			font-size: 22px;
+			color: white;
+		}
+		a:hover {
+			color:black;
+		}
+		h1, h2, h3, p {
+			font-family: 'Open Sans', sans-serif;
+			color: blue;
+		}
+		hr {
+			border-top: 1px solid blue;
+		}
+		.teksti {
+			width: 45%;
+		}
+		.kuva {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img src = "jamk-logo.png" id="logo">
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#koulutus">Koulutus</a></li>
+				<li><a href="#palvelut">Palvelut</a></li>
+				<li><a href="#tutkimus-ja-kehitys">Tutkimus ja kehitys</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<aside>
+					<h3>Reunahuomautus</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</p>
+				</aside>
+				<article>
+					<h2>JAMKin logot ladattavissa</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</p>
+				</article>
+				<hr>
+				<section>
+				<article>
+					<h2>Verkkoversiot</h2>
+					<p class = "teksti">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</p>
+					<img src="jamk-logo-net.jpg" class ="kuva">
+					
+				</article>
+				<hr>
+				<article>
+					<h2>Taittoversiot</h2>
+					<p class = "teksti">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</p>
+					<img src="jamk-logo-pdf.jpg" class ="kuva">			
+				</article>
+			</section>
+		</main>
+		<footer>2014 jamk. Kaikki oikeudet pidätetään</footer>
+	</body>
+</html>

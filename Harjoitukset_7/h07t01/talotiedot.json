@@ -1,0 +1,18 @@
+{
+   "talot":[
+      {
+         "kuva":"kuvat/talo1.jpg",
+         "osoite":"Suistokatu 3, 00120 , Helsinki",
+         "koko":"5h+kt+2kh+s+wc+khh+vh+p",
+         "kuvaus":"Granholmin suunnittelema vuonna 1896 valmistunut Kivipalatsi...",
+         "hinta":"2 904 000 euroa"
+      },
+      {
+         "kuva":"kuvat/talo2.jpg",
+         "osoite":"Suistokatu 2, 00120 , Helsinki",
+         "koko":"4h+kt+2kh+s+wc+khh+vh+p",
+         "kuvaus":"vuonna 1896 valmistunut Kivipalatsi...",
+         "hinta":"3 904 000 euroa"
+      }
+   ]
+}

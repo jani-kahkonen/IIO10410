@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<style>
+	main{
+		margin-left:auto;
+		margin-right: auto;
+		width: 600px;
+		height: 500px;
+		background-color: red;
+	
+	}
+	nav {text-align: center;padding:3px;}
+	
+	/* Navigointivalikko listana, mutta horisontaalisesti asemoituna */
+	nav ul {display:inline; padding:3px 0px 10px 0px;vertical-align: middle;}
+	nav ul li {display:inline; margin:0px 15px 0px 0px;}
+	</style>
+	<script>
+		function myFunction_1() {
+			document.getElementsByTagName("MAIN")[0].style.backgroundColor = "yellow";
+		}
+		function myFunction_2() {
+			document.getElementsByTagName("MAIN")[0].style.backgroundColor = "green";
+		}
+		function myFunction_3() {
+			document.getElementsByTagName("MAIN")[0].style.backgroundColor = "red";
+		}
+		function myFunction_4() {
+			document.getElementsByTagName("MAIN")[0].style.backgroundColor = "blue";
+		}
+	</script>
+</head>
+<body>
+<nav>
+<ul> 
+  <li><a onclick ="myFunction_1()" href=".">Kuva_1</a></li>
+  <li><a onclick ="myFunction_2()" href=".">Kuva_2</a></li>
+  <li><a onclick ="myFunction_3()" href=".">Kuva_3</a></li>
+  <li><a onclick ="myFunction_4()" href=".">Kuva_4</a></li>
+</ul>
+</nav>
+<main>
+
+</main>
+</body>
+</html>

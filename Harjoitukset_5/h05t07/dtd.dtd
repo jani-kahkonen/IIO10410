@@ -1,0 +1,9 @@
+﻿<!ELEMENT viikkoX (henkilotiedot, tehtavat)>
+
+<!ELEMENT henkilotiedot (etunimi, sukunimi, opiskelijatunnus?)>
+<!ELEMENT etunimi (#PCDATA)>
+<!ELEMENT sukunimi (#PCDATA)>
+<!ELEMENT opiskelijatunnus (#PCDATA)>
+
+<!ELEMENT tehtavat (tehtava+)>
+<!ELEMENT tehtava (#PCDATA)>

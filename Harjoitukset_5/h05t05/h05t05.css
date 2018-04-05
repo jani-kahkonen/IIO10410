@@ -1,0 +1,13 @@
+﻿table {
+	display: table;
+}
+td{
+	padding: 10px;
+	display: table-cell;
+}
+tr {
+	display: table-row;
+}
+table, th, td {
+    border: 1px solid blue;
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html>
+	<Head>
+		<title>h09t01</title>
+		<style>
+			*{	margin: 0;	padding: 0;	}
+			ol, ul{	list-style: none; }
+			#skipto{ display: none;	}
+			#skipto li{
+				display: inline;
+			}		
+			header nav{	float: right;	margin-top: 30px; }
+			header nav li{ display: inline; margin-left: 15px; }
+			header h1{
+				height: 52px;
+				width: 160px;
+				float: left;
+				background: url(jamk-logo.png) 0 0 no-repeat;
+				text-indent: -9999px;
+			}	
+			#container{
+				width: 96%;
+				max-width: 960px;
+				margin: auto;
+				padding: 1%;
+			}
+			#main{
+				width: 65%;
+				margin-right: 5%;
+				float: left;
+			}
+			aside{
+				width: 30%;
+				float: right;
+			}
+			#bigpicture{
+				float: left;
+				width: 100%;
+				margin-bottom: 15px;	
+			}
+			#bigpicture img{
+				max-width: 100%;
+			}
+			@media screen and (max-width: 520px){
+				#skipto{
+					display: block;
+					background: #ffc;
+				}
+				header nav, #main, aside{
+					float: left;
+					clear: left;
+					margin: 0 0 30px;
+					width: 100%;
+				}
+				header nav li{
+					margin: 0;
+					background: #eee;
+					display: block;
+					margin-top: 10px;
+				}
+				header nav a{
+					display: block;
+					padding: 10px;
+					text-align: center;
+					text-decoration: none;
+					font-size: 1.25em;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+	<div  id = "container">
+		<header>
+			<nav id = "skipto">
+				<ul>
+					<li><a href = "#main">Ohita</a></li>
+				</ul>
+			</nav>
+			<h1>h09t01</h1>
+			<nav>
+				<ul>
+					<li><a href = "#" title = "jamk.fi">jamk.fi</a></li>
+					<li><a href = "#" title = "koulutus">Koulutus</a></li>
+					<li><a href = "#" title = "Palvelut">Palvelut</a></li>
+				</ul>
+			</nav>
+			
+			<div id = "bigpicture">
+				<img src = "it-dynamo.png">
+			</div>
+		</header>
+		
+		<section id = "main">
+			<h1>JAMK</h1>
+			<p>Jyvaskylan ammattikorekakoulu...</p>
+		</section>
+		
+		<aside>
+			<h1>JAMK/ICT</h1>
+			<p>ICT alalla...ICT alalla...</p>
+		</aside>
+		
+		</div>
+	</body>
+</html>

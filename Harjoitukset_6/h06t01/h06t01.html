@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function laskeSumma(a, b){
+				var s = parseInt(a) + parseInt(b)
+				//var s = 666;
+				return s;
+			}
+			function tulostaSumma(a, b){
+				var summa = laskeSumma(a, b);
+				var element = document.getElementById("results");
+				element.innerHTML = "Summa on: " + summa + "<br>";
+				console.log(summa);
+			}
+		</script>
+	</head>	
+	<body>
+		<form id=f>
+			<h2>Yhteenlasku</h2>
+				<input type="text" id="a"><br>
+				<input type="text" id="b"><br>
+				<button type="button" name="b1" onclick="tulostaSumma(f.a.value, f.b.value)">Laske</button><br>
+		</form>
+		<div id="results"></div>
+	</body>
+</html>

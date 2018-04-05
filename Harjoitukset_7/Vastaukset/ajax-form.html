@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX Search</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans%7CMuli%7CLato">
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<script src="ajax-search.js"></script>
+
+<style>
+   body {font-family: 'Open Sans', sans-serif;}
+   h3 {font-family: 'Dosis', sans-serif;color: #53949c;text-align: center;}
+
+   #searchform {
+   margin: 10px auto;
+   padding: 15px;
+   padding-top: 5px;
+   border: 1px solid #e2eff0;
+   width: 300px;
+   background-color: #f0f0f0;
+   }
+
+   #searchinput {
+   font-size: 100%;
+   color: #53949c;
+   background-color: #ffffff;
+   width: 210px;
+   padding: 20px 15px;
+   border: none;
+   float: left;   }
+
+   #searchbutton {
+   height: 60px;
+   width: 60px;
+   border: none;
+   border-left: 1px solid #e2eff0;
+   background-color: #ffffff;
+   background-image: url("search-icon.png");
+   float: left;
+   cursor: pointer;
+   }
+
+   #searchbutton:hover{
+   background-image: url("search-icon-hover.png");
+   }
+
+   #searchclear {
+   clear: both;
+   }
+</style>
+
+</head>
+<body>
+<!-- Huomaa: Hakukenttä ei ole lomakkeessa: ENTERin painallus ei lähetä lomakedataa -->
+<div id="searchform">
+   <h3>Ajax - SearchForm</h3>
+   <input type="text" name="q" id="searchinput" autocomplete="off"
+          placeholder="Find by first name..." onkeyup="ajaxSearch(this, event)";>
+   <button id="searchbutton" type="button" onclick="submitInput()"></button>
+   <div id="searchclear"></div>
+   <div id="searchresults"></div>
+</div>
+</body>
+</html>

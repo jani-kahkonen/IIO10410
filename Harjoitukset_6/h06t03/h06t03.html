@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p>My List</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var index;
+    var text = "<ul>";
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    for (index = 0; index < fruits.length; index++) {
+        text += "<li>" + fruits[index] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("demo").innerHTML = text;
+}
+function clearFunction(){
+	fruits = [];  
+    text = "";
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<button onclick="myFunction()">Add</button> <button onclick="clearFunction()">Clear</button>
+
+</body>
+</html>

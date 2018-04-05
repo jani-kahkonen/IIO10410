@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>h08t01</title>
+		<script src = "h08t01.js"></script>
+	</head>
+	
+	<body onload="loadJSON()">
+	<div>
+		<h2>Video-player</h2>
+		
+		<video id="video" width="320" height="240" controls>
+			<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+			<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
+			<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg">
+			Your browser does not support the video element.
+		</video>
+		
+		</div>
+		
+		<div>
+		
+		<button onclick="playpause()">Play/Pause</button>
+		<button onclick="restart()">Restart</button>
+		<button onclick="fullscreen()">Fullscreen</button>
+		
+		</div>
+	</body>
+</html>

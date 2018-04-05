@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>JAMKin logot ladattavissa</title>
+		<meta charset="utf-8">
+		
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans%7CMuli%7CLato">
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<style>
+		
+		/* IE-versiot, jotka eivät tunnista uusia HTML5:n semanttisia elementtejä*/
+		article, aside, figure, footer, header, main, nav, section  {
+			display: block;
+		}
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background-color: #fdfdfd;
+			width: 80%;
+			margin: auto;
+		}
+		header {
+			background-color: #fff;
+			margin:0px 25px 0px 25px;
+		}
+		nav {
+			background-color: #00497d;
+			text-align: center;
+			padding:3px;
+		}
+		main {
+			overflow: hidden;
+			border: 1px dashed #2f6fab;
+			padding: 15px;
+			margin:20px 25px 0px 25px;
+		}
+		aside {
+			float:right;
+			width: 200px;
+			background-color:#f2f2f2;
+			color: #00497d;
+			padding: 5px;
+		}
+		section {
+			margin-right:250px;
+			background-color: #fcfcfc;
+		}
+		article {
+			border-top: 1px solid #2f6fab;
+			margin-left:20px;
+		}
+		footer {
+			clear: both;
+			margin:0px 25px 0px 25px;
+		}
+		/* Navigointivalikko listana, mutta horisontaalisesti asemoituna */
+		nav ul {
+			display:inline;
+			padding:3px 0px 10px 0px;
+			vertical-align: middle;
+		}
+		nav ul li {
+			display:inline;
+			margin:0px 15px 0px 0px;
+		}
+		/* Reunahuomautuksen korkeus 100%, huom. myös main overflow: hidden*/
+		main aside, main section {
+			padding-bottom: 9999px;
+			margin-bottom: -9999px;
+		}
+		h1, h2, h3, h4, a4 {
+			color: #00497d;
+			letter-spacing: -1px;
+			font-family: 'Dosis', sans-serif;
+		}
+		a:link, a:visited, a:focus, a:active, a:hover {
+			color: #fff;text-decoration: none;
+		}
+		a:hover {
+			background-color: #b3c9d8;
+		}
+		aside p {
+			font-size:70%;
+		}
+		article img {
+			margin-top:20px;
+			border: 1px solid #aaa;
+			float: right;
+			max-width: 30%;
+		}
+
+		/* poistetaan vain viimeisin float, eli articlen sisällä olevan kuvan float. Huom: hr myös articlen sisällä */
+		article hr.clear {
+			clear: both;
+			visibility:hidden;
+			margin-bottom: -1px;
+			height: 0px
+		}
+		@media screen and (max-width: 1024px){
+			aside{
+				display: none;
+			}
+		}
+		@media screen and (max-width: 520px){
+			main, article, aside{
+				float: left;
+				clear: left;
+				margin: 0 0 30px;
+				width: 100%;
+			}
+			nav{
+				background-color: white;
+			}
+			nav ul li{
+					margin: 0;
+					background: #eee;
+					display: block;
+					margin-top: 10px;
+			}
+			nav a{
+				display: block;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 1.25em;
+			}
+			main{
+				width: 90%;
+			}
+			article, main h1{
+				width: 320px;
+			}	
+			aside{
+				display: none;
+			}
+
+		}
+		
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img src='jamk-logo.png' alt='JAMKin logo'>
+		</header>
+		<nav>
+			<ul>
+				<li><a href=".">Koulutus</a></li>
+				<li><a href=".">Palvelut</a></li>
+				<li><a href=".">Tutkimus ja kehitys</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<aside>
+				<span>Reunahuomatus</span>
+				<p>JAMKin logot ovat uudistuneet syksyllä 2014. Uusia logoja käytetään kaikessa JAMKissa tuotetussa digitaalisessa ja painetusta materiaalissa.</p>
+				<p>Tarvitsetko JAMKin logoa verkko- tai taittokäyttöön? Taittoversioita suositellaan ainoastaan ammattilaisille ja painokäyttöön.</p>
+			</aside>
+			
+			<section>
+				<h1>JAMKin logot ladattavissa</h1>
+					<article>
+						<img src='jamk-logo-net.jpg' alt='JAMKin netlogo'>
+						<h2>Verkkoversiot</h2>
+						<p>Tarvitsetko JAMKin logoa verkkokäyttöön? Verkkoversioita ei suositella ammattilaisille ja painokäyttöön.</p>
+						<hr class="clear">
+					</article>
+					
+					<article>
+						<img src='jamk-logo-pdf.jpg' alt='JAMKin logo'>
+						<h2>Taittoversiot</h2>
+						<p>Tarvitsetko JAMKin logoa taittokäyttöön? Taittoversioita suositellaan ainoastaan ammattilaisille ja painokäyttöön.</p>
+						<hr class="clear">
+					</article>
+			</section>
+		</main>
+		
+		<footer>
+			<p><em>&copy; 2015 JAMK. Kaikki oikeudet pidätetään.</em></p>
+		</footer>
+	</body>
+</html> 

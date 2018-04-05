@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>h03t03</title>
+		<style type="text/css" media="screen">
+			#example {
+				float:left;
+			}
+			#div-1 {
+				position: relative;
+				width:400px;
+			}
+			#div-1a {
+				background-color:red;
+				position:absolute;
+				top:0;
+				right:50px;
+				width:100px;
+				height:100px;
+			}
+			#div-1b {
+				background-color:blue;
+				position:absolute;
+				top:50px;
+				right:100px;
+				width:100px;
+				height:100px;
+			}
+			#div-1c {
+				background-color:blue;
+				position:absolute;
+				top:150px;
+				right:250px;
+				width:100px;
+				height:100px;
+			}
+			#t{
+				position: absolute;
+			}
+			#div-1a:hover{
+				cursor: crosshair;
+			}
+			#div-1b:hover{
+				cursor: help;
+			}
+			#div-1c:hover{
+				cursor: wait;
+			}
+			#t:hover{
+				cursor: copy;
+			}
+			#t1:hover{
+				cursor: pointer;
+			}
+			#t2:hover{
+				cursor: no-drop;
+			}
+			</style>
+		</head>
+		
+		<body>
+			<div id="example">
+				<div id="div-1">
+					<p id ="t1">tekstia1</p>
+					<p id ="t2">tekstia1</p>			
+					<div id="div-1-padding">
+						<div id="div-1a"></div>
+						<div id="div-1b"></div>
+							<p id = "t">TEKSTIAAAAAAAAAAAAAAAAAAA</p>
+						<div id="div-1c"></div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

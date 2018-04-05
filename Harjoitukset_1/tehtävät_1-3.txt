@@ -1,0 +1,52 @@
+﻿Tehtävä_1
+
+Koska selaimelle on sama kuinka teksti on aseteltu. <br></br> tagi vaihtaa rivin.
+
+Tehtävä_2
+
+<table border="6" width="100%" bgcolor="#FFFFB4">	//1
+
+<tr>							//2
+	<td width="100%">				//3
+		<strong>Joopa joooo</strong><br>
+			<ul>				//4
+				<li>Ominaisuus1</li>	//5
+				<li>Ominaisuus2</li>	//6
+			</ul>				//4
+	</td>						//3
+</tr>							//2
+
+</table>						//1
+
+Tehtävä_3
+
+Olisiko väärä alkukirjain kuvan nimessä? pieni o ja iso O.
+	-Edge näyttää oikein työpöydällä isosta kirjaimesta huolimatta.
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Vartiontiliike Jyväskyylä Oy - Hinnasto</title>
+
+</head>
+
+
+
+<body>
+
+
+<h1><img src="ope.jpg" align="left" alt="ope">Ope Opettaja</h1>
+
+<p>Päivää opettaja! Oivaa päpättäjä!</p>
+
+
+
+
+
+</body>
+
+
+</html>

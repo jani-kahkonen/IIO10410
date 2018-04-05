@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<style>
+		input{
+			width: 25px;
+		}
+	</style>
+	<script>
+	
+	function laskePisteet(t1){
+	var pisteet = 0, p1 = 0, p2 = 0, p3 = 0, p4 = 0;
+		p1 += parseInt(document.getElementById("t1").value);
+		p2 += parseInt(document.getElementById("t2").value);
+		p3 += parseInt(document.getElementById("t3").value);
+		p4 += parseInt(document.getElementById("t4").value);
+		
+		if( p1 < 7 || p1 > -1 && p2 < 7 || p2 > -1 && p3 < 7 || p3 > -1 && p4 < 7 || p4 > -1){
+		var arvosana = 0;
+			pisteet = p1 + p2 + p3 + p4;
+				if (pisteet < 12){
+				arvosana = 0;
+				}else if( pisteet < 15){
+					arvosana = 1;
+				}else if( pisteet < 17){
+					arvosana = 2;
+				}else if( pisteet < 19){
+					arvosana = 3;
+				}else if( pisteet < 21){
+					arvosana = 4;
+				}else if( pisteet < 24){
+					arvosana = 5;
+				}else if( pisteet > 25){
+						var a = document.getElementById("ar");
+						a.innerHTML = "Virhe: " + arvosana + "<br>";
+				}
+			var element = document.getElementById("pistemaara");
+			element.innerHTML = "Pistemaara (summa): " + pisteet;
+			
+			var a = document.getElementById("ar");
+			a.innerHTML = "Arvosana: " + arvosana;
+		}else{
+			var element = document.getElementById("pistemaara");
+			element.innerHTML = "Virhe: " + pisteet + "<br>";
+			
+			var a = document.getElementById("ar");
+			a.innerHTML = "Virhe: " + arvosana + "<br>";
+		}
+	}
+	</script>
+</head>
+<body>
+<form id="f">
+<table>
+	<tr>
+		<td>T1</td>
+		<td>T2</td>
+		<td>T3</td>
+		<td>T4</td>
+	</tr>
+	<tr>
+		<td><input onblur="laskePisteet()" id="t1"></input></td>
+		<td><input onblur="laskePisteet()" id="t2"></input></td>
+		<td><input onblur="laskePisteet()" id="t3"></input></td>
+		<td><input onblur="laskePisteet()" id="t4"></input></td>
+	</tr>
+</table>
+
+</form>
+
+<span id="pistemaara"></span><br>
+<span id="ar"></span><br>
+
+</body>
+</html>

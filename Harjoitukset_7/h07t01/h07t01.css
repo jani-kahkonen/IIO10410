@@ -1,0 +1,30 @@
+#talot {
+	width: 600px;
+	height: 800px;
+	float: left;
+	overflow: auto;
+	margin: 10px;
+}
+.taloContainer {
+	display: block;
+	border: 1px solid #ccc;
+	width: 570px;
+	height: 165px;
+	font-size: 12px;
+	margin: 2px;
+	padding: 2px;
+}
+.taloImage {
+	width: 225px;
+	height: 160px;
+	float: left;
+	margin: 2px;
+}
+p.otsikko {
+	font-size: 14px;
+	font-weight: bold;
+}
+p.kuvaus {
+	font-size: 14px;
+	font-style: italic;
+}

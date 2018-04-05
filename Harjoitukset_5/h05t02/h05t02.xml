@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tiedot>
+	<tieto>
+		<tilaaja>A</tilaaja>
+		<tilauspvm>0</tilauspvm>
+		<tuotteet>A</tuotteet>
+	</tieto>
+	<tieto>
+		<tilaaja>B</tilaaja>
+		<tilauspvm>1</tilauspvm>
+		<tuotteet>B</tuotteet>
+	</tieto>
+	<tieto>
+		<tilaaja>C</tilaaja>
+		<tilauspvm>2</tilauspvm>
+		<tuotteet>C</tuotteet>
+	</tieto>
+	<tieto>
+		<tilaaja>D</tilaaja>
+		<tilauspvm>3</tilauspvm>
+		<tuotteet>D</tuotteet>
+	</tieto>
+	<tieto>
+		<tilaaja>E</tilaaja>
+		<tilauspvm>4</tilauspvm>
+		<tuotteet>E</tuotteet>
+	</tieto>
+</tiedot>

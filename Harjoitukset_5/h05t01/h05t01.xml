@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Henkilot>
+	<Henkilo id="0">
+		<name>A</name>
+		<lastname>A</lastname>
+		<email>A</email>
+		<number type="gsm" >0</number>
+		<number type="puh" >1</number>
+	</Henkilo>
+	<Henkilo id="1">
+		<name>B</name>
+		<lastname>B</lastname>
+		<email>B</email>
+		<number type="gsm" >1</number>
+		<number type="puh" >0</number>
+	</Henkilo>
+</Henkilot>

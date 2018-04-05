@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>h07t03</title>	
+		<!-- Tarvittavat kirjastot jotka samassa kansiossa. -->
+		<script src="jquery-1.7.1.min.js" type="text/javascript"></script> 
+		<script src="jquery.easytabs.min.js" type="text/javascript"></script>
+		<style>
+		.etabs {
+			margin: 0;	padding: 0;
+		}
+		.tab {
+			display: inline-block;	background: #eee;	border: solid 1px #999;
+		}
+		.tab a {
+			font-size: 14px;	line-height: 2em;	display: block;	padding: 0 10px;	outline: none;
+		}
+		</style>
+
+		<script type="text/javascript">
+		$(document).ready( function() {
+			$('#tab-container').easytabs();
+		});
+		</script>
+	</head>
+	<body>
+		<!-- Divin sisältö vaihtuu kun painetaan linkeistä. -->
+		<!-- Listan linkit diveihin id:n perusteella. -->
+		<div id="tab-container" class='tab-container'>
+			<ul class='etabs'>
+				<li class='tab'><a href="#tab1">Tab 1</a></li>
+				<li class='tab'><a href="#tab2">Tab </a></li>
+				<li class='tab'><a href="#tab3">Tab 3</a></li>
+			</ul>
+			<!-- Linkkien kohde divit. -->
+			<div class='panel-container'>
+				<div id="tab1">
+					<h2>Tab 1</h2>
+				</div>
+				<div id="tab2">
+					<h2>Tab 2</h2>
+				</div>
+				<div id="tab3">
+					<h2>Tab 3</h2>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

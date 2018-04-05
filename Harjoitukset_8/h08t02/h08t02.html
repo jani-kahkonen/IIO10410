@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Canvas Examples</title>
+<script>
+function drawToCanvas() {
+	// find the <canvas> element
+	var canvas  = document.getElementById("myCanvas");
+	// get canvas context
+	var ctx = canvas.getContext("2d");
+	// define fill style
+	ctx.fillStyle="#0000FF";
+	// draw filled rectangle - fillRect(x,y,width,height)
+	ctx.fillRect(0,0,800,400);
+	
+		// define fill style
+	ctx.fillStyle="yellow";
+	// draw filled rectangle - fillRect(x,y,width,height)
+	ctx.fillRect(200,0,100,400);
+	
+	ctx.fillRect(0,150,800,100);
+	
+
+	
+	ctx.fillStyle="green";
+	ctx.fillRect(0,400,800,400);
+	
+	ctx.fillStyle="yellow";
+	ctx.beginPath();
+    ctx.moveTo(0,400);
+    ctx.lineTo(800,600);
+    ctx.lineTo(0,800);
+    ctx.fill();
+	ctx.lineWidth = 5;
+    ctx.strokeStyle = 'white';
+    ctx.stroke();
+	
+	ctx.fillStyle="red";
+	ctx.beginPath();
+    ctx.moveTo(0,400);
+    ctx.lineTo(400,600);
+    ctx.lineTo(0,800);
+    ctx.fill();
+	ctx.lineWidth = 5;
+    ctx.strokeStyle = 'black';
+    ctx.stroke();
+  
+	
+
+}
+</script>
+</head>
+
+<body onload="drawToCanvas()">
+<div>
+	<h2>Ruotsin lippu</h2>
+	<canvas id="myCanvas" width="800" height="800" style="border:1px solid #000000;"/>
+    <br>
+	<h2>Ruotsin lippu</h2>
+	<canvas id="myCanvas2" width="800" height="800" style="border:1px solid #000000;"/>
+    
+</div>
+</body>
+</html>

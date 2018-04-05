@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>h08t03</title>
+		<style>
+			#holder { border: 10px dashed #ccc; width: 300px; min-height: 300px; margin: 20px auto;}
+			#holder.hover { border: 10px dashed #0c0; }
+			#holder img { display: block; margin-left: auto; margin-right: auto; }
+		</style>
+	</head>
+	<body>
+		<div id="holder"></div> 	
+		<script>		
+		var holder = document.getElementById('holder'),fileupload = document.getElementById('upload');
+		function previewfile(file) {
+			var reader = new FileReader();
+			reader.onload = function (event) {
+				var image = new Image();
+				image.src = event.target.result;
+				image.width = 125; // a fake resize
+				holder.appendChild(image);
+			};
+		reader.readAsDataURL(file);
+		}
+		function readfiles(files) {
+			for (var i = 0; i < files.length; i++) {
+				previewfile(files[i]);
+			}
+		}
+		holder.ondragover = function () { this.className = 'hover'; return false; };
+		holder.ondragend = function () { this.className = ''; return false; };
+		holder.ondrop = function (e) { this.className = ''; e.preventDefault(); readfiles(e.dataTransfer.files); }
+		</script>
+	</body>
+</html>

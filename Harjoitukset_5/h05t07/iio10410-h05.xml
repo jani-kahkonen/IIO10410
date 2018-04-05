@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE viikkoX SYSTEM "dtd.dtd">
+
+<viikkoX>
+	<henkilotiedot>
+		<etunimi>Jani</etunimi>
+		<sukunimi>Kähkönen</sukunimi>
+		<opiskelijatunnus>H9575</opiskelijatunnus>
+	</henkilotiedot>
+	<tehtavat>
+		<tehtava>3</tehtava>
+		<tehtava>3</tehtava>
+		<tehtava>3</tehtava>
+		<tehtava>5</tehtava>
+		<tehtava>4</tehtava>
+		<tehtava>4</tehtava>
+		<tehtava>7</tehtava>
+	</tehtavat>
+</viikkoX>

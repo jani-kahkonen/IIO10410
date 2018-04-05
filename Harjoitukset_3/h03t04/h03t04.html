@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+@media screen {
+	body{
+		background-color: white;
+	}
+    p {
+		color: blue;
+        font-family: verdana, sans-serif;
+        font-size: 17px;
+    }
+}
+
+@media print {
+	body{
+		background-color: white;
+	}
+    p {
+		color: red;
+        font-family: georgia, serif;
+        font-size: 14px;
+    }
+	h1{
+		page-break-before: always;
+	}
+}
+</style>
+</head>
+<body>
+
+<h2>The @media Rule</h2>
+<p>The @media rule makes it possible to define different style rules for different media types in the same stylesheet.</p>
+<p>The style in this example tells the browser to display a 17 pixels Verdana font on the screen. But if the page is printed, it will be in a blue 14 pixels Georgia font.</p>
+<p><b>Test it!</b> Print this page (or open Print Preview), and you will see that the text will be displayed in blue, and in another smaller font.</p>
+
+<h1>h1_A</h1>
+<h3>h2</h3>
+<h4>h4</h4>
+
+<h1>h1_B</h1>
+<h3>h2</h3>
+<h4>h4</h4>
+
+</body>
+</html>

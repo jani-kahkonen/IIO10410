@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function writeResults(){
+			
+				var num = ["25", "20", "15", "10", "5", "0"];
+				var text = "";
+				var total = 0;
+				var size = 0;
+				
+				var x = function (num) {return num};
+				var y = function (num) { return num.length}
+				
+				for (i = 0; i < num.length; i++) {
+					text += "[" + i + "]" + " = " + num[i] + "<br>";
+					total += parseInt(x(num[i]));
+				}
+				document.getElementById("results").innerHTML = text;
+				
+				size = y(num);
+				
+				var element = document.getElementById("sum");
+				element.innerHTML = "Summa on: " + total + "<br>";
+				var element = document.getElementById("siz");
+				element.innerHTML = "Koko on: " + size + "<br>";
+				var arvo = total / size;
+				var element = document.getElementById("avg");
+				element.innerHTML = "KArvo on: " + arvo + "<br>";
+			}
+		</script>
+	</head>	
+	<body>
+		<form id=f>
+			<h2>Tehtävä</h2>
+				<button type="button" name="b1" onclick="writeResults()">Laske</button><br>
+		</form>
+		<div id="results"></div><br>
+		<div id="sum"></div>
+		<div id="siz"></div>
+		<div id="avg"></div>
+	</body>
+</html>

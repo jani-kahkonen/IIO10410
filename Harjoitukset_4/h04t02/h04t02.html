@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans%7CMuli%7CLato">
+<style>
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+#nappi {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ffc;
+	border: 0px;
+}
+
+#tkhj {
+margin-left: 20px;
+margin-right: 20px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+}
+
+h3, h4 {
+	display: inline;background-color: #ffc;
+}
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	background-color: gray;
+	border-radius: 10px;
+}
+#n, legend {
+	background-color: green;
+	border: solid black 1px;
+	border-radius: 10px;
+}
+#n {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 120px; height: 50px;
+}
+</style>
+</head>
+
+<body>
+	<form action="nayta-http-data.php">
+	<h1>Nettoasunto - ilmianna loistokohde</h1>	
+		<fieldset id='tkhj'>
+			<legend>Ilmiantaja</legend>
+				Nimi:<br><input type="text" name="nimi" value="" placeholder="nimi" autofocus><br>
+				Puhelinumero:<br><input type="text" name="puhelinNumero" value="" placeholder="numero"><br>
+				Sähköposti:<br><input type="text" name="sähköposti" value="" placeholder="sposti"><br>
+		</fieldset>
+	<br>
+		<fieldset id='tkhj'>
+			<legend>Ilmoituksen URL</legend>
+				Myynti-ilmoituksen URL:<br><input type="text" name="url" value=""><br>
+		</fieldset>
+	<br>
+		<fieldset id='tkhj'>
+			<legend>Asunnon pyyntihinta</legend>
+			<output name="z1" for="a"></output>
+			<input type="range" id="a" value="500">
+		</fieldset>
+	<br>
+		<fieldset id='tkhj'>
+			<legend>Arvioimani hinta</legend>
+			<output name="z2" for="b"></output>
+			<input type="range"  id="b" min="1" max="500">
+		</fieldset>
+	<br>
+		<fieldset id='tkhj'>
+			<legend>Suosikkialueeni</legend>
+				<input type="text" name="alue" value=""><br>
+		</fieldset>
+		<br>
+		<input id = "n"type='submit' name='nappi' value='Ilmianna asunto!'>
+	</form>
+</body>
+</html>
